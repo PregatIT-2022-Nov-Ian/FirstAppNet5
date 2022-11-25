@@ -10,6 +10,17 @@ namespace FirstAppNet5
     {
         static void Main(string[] args)
         {
+            var financeBlog = new FinanceBlog("Our finances", "Blog pentru finante. Neinteresant!");
+            financeBlog.AddSource("www.ing.ro");
+            financeBlog.AddSource("www.curs.ro");
+
+            var psiBlog = new PsihoBlog { Title = "Psihology blog", Description = "Blog psiho in urma covid" };
+
+            financeBlog.ShowBlog();
+            psiBlog.ShowBlog();
+
+            /*
+
             int myNum = 9;
             double myDoubleNum = 8.99;
             char myLetter = 'A';
@@ -29,7 +40,7 @@ namespace FirstAppNet5
             {
                 Console.WriteLine(car);
             }
-            */
+            
             PrintToConsole(cars);
 
             IEnumerable<Student> students = new List<Student>()
@@ -51,6 +62,8 @@ namespace FirstAppNet5
             //Console.WriteLine(cars[1]);
             //Console.WriteLine(myText);
             //Console.WriteLine(myNum);
+
+            */
             Console.ReadLine(); 
         }
 
